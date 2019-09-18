@@ -1,0 +1,107 @@
+/*© Michael Karssen 99038898*/
+/*Applicatie en media ontwikkelaar*/
+
+body {
+  background-image: url("../Images/Background.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 99%;
+  font-family: Courier New;
+}
+
+.nav ul {
+	list-style: none;
+	background: rgba(255,255,255,.11);
+	text-align: center;
+	padding: 35px;
+	margin: -10px;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	width: 150px
+	display: block;
+	padding: 15px;
+	font-size: 18px;
+}
+ 
+ .nav a:hover {
+ 	background: #33001E;
+ 	transition: 0.4s;
+}
+ 
+ .logodavinci img {
+ 	position: absolute;
+ 	margin-top: 10px;
+ 	margin-left: 10px;
+ 	height: 75px;
+ 	width: 100px;
+}
+ 
+ .logohtmlcss img {
+ 	position: absolute;
+ 	margin-top: 2px;
+ 	margin-left: 1400px;
+ 	height: 90px;
+ 	width: 115px;
+}
+
+ section {
+ 	margin-top: 80px;
+ 	padding: 225px;
+ 	height: 50px;
+ 	display: flex;
+ 	align-items: center;
+}
+
+ .box {
+ 	position: center;
+ 	max-width: 1075px;
+ 	padding: 50px;
+ 	background: rgba(255,255,255,.5);
+}
+
+ .selfie img{
+	border-radius: 50%;
+	margin-top: 290px;
+	margin-left: 1060px;
+	height: 125px;
+	width: 125px;
+}
+ 
+ .granuband img{
+	margin-top: 250px;
+	margin-left: 965px;
+	height: 125px;
+	width: 225px;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.royalleerdam img{
+	margin-top: 485px;
+	margin-left: 965px;
+	height: 125px;
+	width: 225px;
+	border-radius: 0px 20px 0px 20px;
+}
+
+footer.footer {
+    margin: -8px;
+    margin-top: 65px;
+    height: 50px;
+    width: 101%;
+    background-color: rgba(255,255,255,.11);
+}
+
+p.copyright {
+    color: white;
+    line-height: 50px;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
