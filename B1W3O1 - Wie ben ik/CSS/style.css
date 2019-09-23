@@ -30,12 +30,12 @@ body {
 	font-size: 18px;
 }
  
- .nav a:hover {
+.nav a:hover {
  	background: #33001E;
  	transition: 0.4s;
 }
  
- .logodavinci img {
+.logodavinci img {
  	position: absolute;
  	margin-top: 10px;
  	margin-left: 10px;
@@ -43,7 +43,7 @@ body {
  	width: 100px;
 }
  
- .logohtmlcss img {
+.logohtmlcss img {
  	position: absolute;
  	margin-top: 2px;
  	margin-left: 1400px;
@@ -51,7 +51,7 @@ body {
  	width: 115px;
 }
 
- section {
+section {
  	margin-top: 80px;
  	padding: 225px;
  	height: 50px;
@@ -59,14 +59,14 @@ body {
  	align-items: center;
 }
 
- .box {
+.box {
  	position: center;
  	max-width: 1075px;
  	padding: 50px;
  	background: rgba(255,255,255,.5);
 }
 
- .selfie img{
+.selfie img{
 	border-radius: 50%;
 	margin-top: 290px;
 	margin-left: 1060px;
@@ -74,7 +74,7 @@ body {
 	width: 125px;
 }
  
- .granuband img{
+.granuband img{
 	margin-top: 250px;
 	margin-left: 965px;
 	height: 125px;
