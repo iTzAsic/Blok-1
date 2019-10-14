@@ -1,0 +1,44 @@
+/*© Michael Karssen 99038898*/
+/*Applicatie en media ontwikkelaar*/
+
+/*body {
+  background-color: white;
+  height: 100%;
+  width: 99%;
+  font-family: Roboto;
+  font-size: 20;*/
+}
+
+.nav ul {
+	list-style: none;
+	background: black;
+	text-align: center;
+	padding: 35px;
+	margin: -10px;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	width: 150px
+	display: block;
+	padding: 15px;
+	font-size: 20px;
+}
+ 
+.nav a:hover {
+ 	background: MediumSeaGreen;
+ 	transition: 0.3s;
+}
+
+.center {
+ 	margin: 80px;
+ 	padding: 225px;
+ 	height: 10px;
+ 	display: center;
+ 	align-items: center;
+}
