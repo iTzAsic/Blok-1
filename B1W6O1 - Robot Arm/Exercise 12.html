@@ -7,7 +7,31 @@
             var robotArm = new RobotArm(canvas);
             
             robotArm.loadLevel("exercise 12");
+
+            var color = robotArm.scan();
+            console.log(color);
+
+            for(var Rechts = 1; Rechts <=8; Rechts ++){
+                    robotArm.moveRight();
+                }
             
+            for(var Links = 8; Links >=0; Links --){
+                robotArm.grab();
+                color = robotArm.scan();
+                if(color == "red") {
+                            for(var Einde = 0+Links; Einde <=8; Einde ++){
+                            robotArm.moveRight();
+                            } 
+                            robotArm.drop();
+                            for(var Lastpos = 0+Links; Lastpos <=8; Lastpos++){
+                            robotArm.moveLeft();
+                            }
+                }
+                else{
+                    robotArm.drop();
+                }
+                robotArm.moveLeft();
+            }
             
             
             robotArm.speed = 750;

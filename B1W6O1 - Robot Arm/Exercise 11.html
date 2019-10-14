@@ -3,13 +3,31 @@
         <canvas id="canvas" width="800" height="600"></canvas>
         <script src="./robot-arm.js"></script>
         <script>
-            // Robotarm bibliotheek inladen
             var canvas = document.getElementById("canvas");
             var robotArm = new RobotArm(canvas);
             
             robotArm.loadLevel("exercise 11");
             
+            var color = robotArm.scan();
+            console.log(color);
+
+                for(var Rechts = 1; Rechts <=9; Rechts ++){
+                    robotArm.moveRight();
+                }
             
+                for(var Links = 9; Links >=1; Links --){
+                    robotArm.grab();
+                    color = robotArm.scan();
+                    if(color == "white"){
+                        robotArm.moveRight();
+                        robotArm.drop();
+                        robotArm.moveLeft();
+                    }
+                    else{
+                        robotArm.drop();
+                    }
+                    robotArm.moveLeft();
+                }
             
             robotArm.speed = 750;
             robotArm.run();

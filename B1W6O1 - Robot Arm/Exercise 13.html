@@ -6,9 +6,27 @@
             var canvas = document.getElementById("canvas");
             var robotArm = new RobotArm(canvas);
             
-            robotArm.loadLevel("exercise 13");
+            robotArm.randomLevel( 1, 8);
             
-            
+            robotArm.grab();
+            var color = robotArm.scan();
+
+            var Move = 1;
+            while(color != null){
+
+                for(var Rechts = 0; Rechts <Move; Rechts ++){
+                    robotArm.moveRight();
+                    }
+                    
+                    robotArm.drop();
+                    for(var Links = 0; Links <Move; Links ++){
+                    robotArm.moveLeft();
+                    }
+                    robotArm.grab();
+                    color = robotArm.scan();
+                    
+                    Move++;
+            }
             
             robotArm.speed = 750;
             robotArm.run();
