@@ -9,17 +9,17 @@
             robotArm.loadLevel("exercise 7");
             
             for(var getal = 1; getal <=9; getal++) {
-            robotArm.moveRight();
+ 	           robotArm.moveRight();
             }
             for(var getal1 = 1; getal1 <=5; getal1++) {
               for(var getal2 = 1; getal2 <=6; getal2++) {
-              robotArm.grab();
-              robotArm.moveLeft();
-              robotArm.drop();
-              robotArm.moveRight();
-              }
-            robotArm.moveLeft();
-            robotArm.moveLeft();
+	              robotArm.grab();
+	              robotArm.moveLeft();
+	              robotArm.drop();
+	              robotArm.moveRight();
+	            }
+               robotArm.moveLeft();
+               robotArm.moveLeft();
             }
 
             robotArm.speed = 750;

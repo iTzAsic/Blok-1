@@ -8,47 +8,19 @@
             
             robotArm.loadLevel("exercise 9");
             
-            robotArm.grab();
-            for(var blue = 1; blue <=5; blue++) {
-            robotArm.moveRight();
-            }
-            robotArm.drop();
-            
-            robotArm.moveRight();
-            for(var green = 1; green <=2; green++) {
-               for(var green1 = 1; green1 <=5; green1++) {
-               robotArm.moveLeft();
-               }
-               robotArm.grab();
-               for(var green2 = 1; green2 <=5; green2++) {
-               robotArm.moveRight();
-               }
-               robotArm.drop();
-            }
-
-            robotArm.moveRight();
-            for(var white = 1; white <=3; white++) {
-               for(var white1 = 1; white1 <=5; white1++) {
-               robotArm.moveLeft();
-               }
-               robotArm.grab();
-               for(var white2 = 1; white2 <=5; white2++) {
-               robotArm.moveRight();
-               }
-               robotArm.drop();
-            }
-
-            robotArm.moveRight();
-            for(var red = 1; red <=4; red++) {
-               for(var red1 = 1; red1 <=5; red1++) {
-               robotArm.moveLeft();
-               }
-               robotArm.grab();
-               for(var red2 = 1; red2 <=5; red2++) {
-               robotArm.moveRight();
-               }
-               robotArm.drop();
-            }
+            for (var i = 1; i < 5; i++) {
+              for (var a = 0; a < i; a++) {
+                    robotArm.grab();    
+                    for (var j = 0; j < 5; j++) {
+                        robotArm.moveRight();
+                    } 
+                        robotArm.drop();
+                    for (var k = 0; k < 5; k++) {
+                        robotArm.moveLeft(); 
+                    }    
+                }
+                robotArm.moveRight();
+            }   
 
             robotArm.speed = 1000;
             robotArm.run();

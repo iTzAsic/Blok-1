@@ -8,47 +8,30 @@
             
             robotArm.loadLevel("exercise 10");
             
-            robotArm.grab();
-            for(var green = 1; green <=9; green++) {
-            robotArm.moveRight();
-            }
-            robotArm.drop();
-           
-            for(var blueA1 = 1; blueA1 <=8; blueA1++) {
-            robotArm.moveLeft();
-            }
-            robotArm.grab();
-            for(var blueA2 = 1; blueA2 <=7; blueA2++) {
-            robotArm.moveRight();
-            }
-            robotArm.drop();
+            var rechts = 1;
+            var links = 2;
+            robotArm.speed = 1000;
+            for (var j = 0; j < 4; j++) { 
+              robotArm.moveRight();}
+              robotArm.grab();
 
-            for(var white1 = 1; white1 <=6; white1++) {
-            robotArm.moveLeft();
-            }
-            robotArm.grab();
-            for(var white2 = 1; white2 <=5; white2++) {
-            robotArm.moveRight();
-            }
-            robotArm.drop();
+            for (var i = 2; i < 4; i++) {
 
-            for(var red1 = 1; red1 <=4; red1++) {
-            robotArm.moveLeft();
-            }
-            robotArm.grab();
-            for(var red2 = 1; red2 <=3; red2++) {
-            robotArm.moveRight();
-            }
-            robotArm.drop();
+              for (var a = 0; a < i; a++) {
 
-            for(var blueB1 = 1; blueB1 <=2; blueB1++) {
-            robotArm.moveLeft();
+                    for (var k = 0; k < rechts; k++) {
+                        robotArm.moveRight();
+                    }
+                    rechts += 2;
+                    robotArm.drop();
+
+                    for(var l = 0; l < links; l++){
+                    robotArm.moveLeft();
+                }
+                links += 2;
+                robotArm.grab();
+                }
             }
-            robotArm.grab();
-            for(var blueB2 = 1; blueB2 <=1; blueB2++) {
-            robotArm.moveRight();
-            }
-            robotArm.drop();
 
             robotArm.speed = 750;
             robotArm.run();
