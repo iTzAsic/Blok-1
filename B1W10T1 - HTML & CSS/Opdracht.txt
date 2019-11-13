@@ -1,0 +1,94 @@
+Functionele eisen:
+
+    De website is via de browser te bezoeken en komt overeen met het ontwerp
+    De klant kan over het menu heen gaan en de achtergrondkleur van de menu-items worden wit
+    De klant ziet in de footer wie de webpagina gemaakt heeft
+    De website is gecentreerd in de pagina
+    Elke pagina heeft voor elke webpagina een goede title.
+
+ 
+
+Technische eisen:
+
+    Je html en css valideren via https://validator.w3.org/#validate_by_upload
+    Je html en css zijn netjes uitgelijnd
+    Je maakt gebruik van alle kennis die je al hebt
+    De standaardteksten hebben als font Roboto met als lettergrootte 14px. Dit font is via google beschikbaar: https://fonts.google.com/specimen/Roboto
+    De kopjes hebben als font Noto Sans met als lettergrootte 24 px. Dit font is via google beschikbaar: https://fonts.google.com/specimen/Noto+Sans
+    Je maakt gebruik van een div om de gehele pagina te centreren, deze div is 1000px breed. 
+    Je moet de website bouwen met behulp van de Grid Layout en gebruik 1 centrale CSS
+    Je mag voor deze opdracht ** GEEN ** gebruik maken van een negatieve margin / padding
+    De achtergrondkleur van de body is grijs
+    Het logo heeft aan de bovenkant en onderkant een ruimte van 20px (zie ontwerp)
+
+ 
+
+Menu
+
+    Is gemaakt met behulp van een ongeordende lijst
+    Achtergrondkleur van het menu is: #91c73e
+    De standaard achtergrondkleur van een menu-item is: #511c74
+    De tekstkleur van een menu-item is: #91c73e
+    De achtergrondkleur van een menu-item bij een mouse-over is: wit
+    Onder het menu is een witte ruimte van 50px
+
+ 
+
+ 
+
+ 
+
+Pagina 1: index.html (snacks)
+
+    De padding van de teksten zijn links en rechts 20px
+    De kopjes zijn gecentreerd
+    Voor de teksten maak je gebruik van Lorem Ipsum: https://nl.lipsum.com/
+    Plaats de afbeeldingen in de aangegeven volgorde (zie ontwerp)
+
+ 
+
+Pagina 2: friet.html
+
+Titel Prijzen en de volgende frietjes en prijzen worden getoond:
+
+    Friet € 1,90
+    Friet met saus € 2,60
+    Friet satésaus € 3,00
+    Friet speciaal € 3,00
+    Friet stoofvlees € 4,75
+
+Plaats de afbeeldingen in de aangegeven volgorde (zie ontwerp).
+
+ 
+
+Pagina 3: lunch.html
+
+Onder de titel Broodjes wordt het volgende getoond:
+
+Ei                    € 2,00
+
+Frikadel         € 2,50
+
+Kroket            € 2,50
+
+...                     …
+
+Onder de titel Broodjes hamburger wordt het volgende getoond:
+
+Hamburger                           € 4,20
+
+Hamburger speciaal           € 4,70
+
+Hamburger gepaneerd       € 4,20
+
+...                                            …
+
+ 
+
+ 
+
+Inleveren
+
+Lever je opdracht als zipfile in met de volgende naamgeving:
+
+<leerlingnummer>_voornaam_achternaam
